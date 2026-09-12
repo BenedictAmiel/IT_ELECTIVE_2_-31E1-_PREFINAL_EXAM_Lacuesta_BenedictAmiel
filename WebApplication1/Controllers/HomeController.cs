@@ -139,6 +139,19 @@ public class HomeController : Controller
                 },
                 ChosenAnswer = "B"
             },
+            new ExamQuestion
+            {
+                Number = 11,
+                Question = "Why might a ViewModel be used when displaying Student and Section information?",
+                Choices = new List<string>
+                {
+                    "A. To replace the database",
+                    "B. To combine or shape the data specifically needed by the view",
+                    "C. To automatically create database tables",
+                    "D. To prevent controllers from using LINQ"
+                },
+                ChosenAnswer = "B"
+            },
         };
         return View(questions);
     }
