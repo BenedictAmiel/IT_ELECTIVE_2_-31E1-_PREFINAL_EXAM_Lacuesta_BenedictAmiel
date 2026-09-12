@@ -100,6 +100,19 @@ public class HomeController : Controller
                 },
                 ChosenAnswer = "B"
             },
+            new ExamQuestion
+            {
+                Number = 8,
+                Question = "In the following example, what is SectionId?\npublic int SectionId { get; set; }\npublic Section Section { get; set; }",
+                Choices = new List<string>
+                {
+                    "A. Primary key of Student",
+                    "B. Foreign key referencing Section",
+                    "C. Navigation property",
+                    "D. Database connection string"
+                },
+                ChosenAnswer = "B"
+            },
         };
         return View(questions);
     }
