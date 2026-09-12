@@ -61,6 +61,19 @@ public class HomeController : Controller
                 },
                 ChosenAnswer = "A"
             },
+            new ExamQuestion
+            {
+                Number = 5,
+                Question = "What does the following command primarily do?\ndotnet ef dbcontext scaffold \"ConnectionString\" Microsoft.EntityFrameworkCore.SqlServer -o Models",
+                Choices = new List<string>
+                {
+                    "A. Deletes the database",
+                    "B. Creates a new MVC project",
+                    "C. Generates EF Core models and a DbContext from an existing database",
+                    "D. Starts the MVC application"
+                },
+                ChosenAnswer = "C"
+            },
         };
         return View(questions);
     }
