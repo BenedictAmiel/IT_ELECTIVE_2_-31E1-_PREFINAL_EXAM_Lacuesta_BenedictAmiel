@@ -1,0 +1,21 @@
+﻿@model List<WebApplication1.Models.ExamQuestion>
+
+<h1>IT Elective 2 Prefinal Exam</h1>
+
+@foreach (var item in Model)
+{
+    <section class="question-card">
+        <h2>@item.Number. @item.Question</h2>
+
+        <ul style="list-style-type: none; padding-left: 0; font-size: 20px;">
+            @foreach (var choice in item.Choices)
+            {
+                <li style="margin-bottom: 8px;">@choice</li>
+            }
+        </ul>
+
+        <p style="font-size: 20px;">
+            <strong>Chosen Answer:</strong> @item.ChosenAnswer
+        </p>
+    </section>
+}
